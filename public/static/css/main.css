@@ -103,11 +103,11 @@ h4 {
 }
 
 .money.plus {
-  color: var(--plus-color);
+  color: green;
 }
 
 .money.minus {
-  color: var(--minus-color);
+  color: red;
 }
 
 label {
