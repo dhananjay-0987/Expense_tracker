@@ -1,12 +1,13 @@
 from django.db import models
+from django.utils import timezone
 
+# Create your models here.
 
 class curr_balance(models.Model):
     balance = models.FloatField(default=0.0)
     def __str__(self):
         return str(self.balance)
 
-# Create your models here.
 class track_history(models.Model):
     balance = models.ForeignKey(curr_balance, on_delete = models.CASCADE)
     amount = models.FloatField()

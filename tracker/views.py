@@ -1,9 +1,11 @@
 from django.shortcuts import render , redirect
 from .models import curr_balance, track_history
 from django.contrib import messages
-
 from django.db.models import Sum
+
 # Create your views here.
+
+
 def index(request):
     if request.method == "POST":
         description = request.POST.get("description")
